@@ -87,3 +87,76 @@
     color: white;
     cursor: pointer;
 }
+
+@media(max-width:800px) {
+    .container {
+        width: 200px;
+        display: block;
+
+    }
+
+    .imageWrapper {
+        width: 230%;
+    }
+
+    .imageWrapper>Image {
+        width: 300px;
+    }
+
+    .right {
+        font-size: 1.5rem;
+    }
+
+    .size {
+        font-size: 1rem;
+        width: 20px;
+    }
+
+    .size>span {
+        opacity: 0;
+    }
+
+    .SizeVaraints {
+        font-size: 1.1rem;
+        display: block;
+        background-size: 20px;
+        margin-top: -680%;
+        padding-bottom: 20px;
+        margin-left: 220%;
+
+
+    }
+
+    .SizeVaraints>div {
+
+        padding-bottom: -20px;
+        margin-top: 2%;
+
+
+    }
+
+    .counter {
+        margin-left: -150%;
+        margin-top: 20%;
+
+
+    }
+
+    .quantity>span {
+        transform: translateY(-80%);
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 20%;
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+
+
+    .right>:nth-child(2) {
+        font-size: 0.8rem;
+    }
+}

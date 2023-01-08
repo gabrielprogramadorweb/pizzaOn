@@ -21,6 +21,14 @@ export const useStore = create(
                 pizzas: state.cart.pizzas.filter((_, i) => i != index)
 
             }
-        }))
+        })),
+
+        //Reset de carrinho, limpar cart
+        resetCart: () =>
+            set(() => ({
+                cart: {
+                    pizzas: []
+                }
+            }))
     })
 )

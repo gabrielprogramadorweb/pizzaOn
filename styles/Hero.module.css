@@ -87,13 +87,13 @@
 
 .Pizza {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   background-color: white;
   box-shadow: var(--shadow);
   padding: 0.5rem;
   border-radius: 0.5rem;
   position: absolute;
-  bottom: 4rem;
+  bottom: -4rem;
   left: 19rem;
   width: max-content;
 }
@@ -116,4 +116,69 @@
 .Pizza:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+@media(max-width:800px) {
+  .imageContainer {
+    width: 16rem;
+    position: relative;
+    top: 5rem;
+    left: 58em;
+    transform: translateX(-360%);
+
+  }
+
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .ContactUs {
+    opacity: 0;
+    top: -1rem;
+    left: 1.2rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    color: var(--themeRed);
+    gap: 1rem;
+
+  }
+
+  .cherryDiv {
+    opacity: 0;
+    border: none;
+    margin-top: -2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-style: 0.8rem;
+    color: var(--themeRed);
+    font-weight: bold;
+    margin-left: -12%;
+
+  }
+
+  .Pizza {
+    display: flex;
+    gap: 0.1rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 4rem;
+    left: -3rem;
+    width: max-content;
+    bottom: 10%;
+
+  }
+
+  .btns {
+    opacity: 0;
+  }
+
+  .miniText {
+    opacity: 0;
+  }
 }

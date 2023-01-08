@@ -29,9 +29,9 @@ export default function Hero() {
           Nossa missão é encantar
         </span>
 
-        <button className="btn">
+        {/**<button className={`'btn', ${css.btns}`}>
           Vamos começar
-        </button>
+  </button>}*/}
       </div>
       {/*Right side */}
       <div className={css.right}>

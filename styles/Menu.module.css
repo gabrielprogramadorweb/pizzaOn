@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 3rem;
     margin-top: 6rem;
+    text-align: center;
 }
 
 .heading {
@@ -55,4 +56,44 @@
 .ImageWrapper>span>img:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media(max-width:800px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heading {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading>span {
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+        justify-items: center;
+        text-justify: auto;
+        display: flex;
+
+
+    }
+
+    .heading>:nth-child(1) {
+        color: var(--themeRed);
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading>:nth-child(2),
+    .heading>:nth-child(3) {
+        align-items: center;
+        font-size: 2rem;
+
+    }
 }

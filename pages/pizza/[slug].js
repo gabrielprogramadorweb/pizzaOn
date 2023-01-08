@@ -6,7 +6,10 @@ import LeftArrow from '../../assets/arrowLeft.png'
 import RightArrow from '../../assets/arrowRight.png'
 import { useState } from 'react';
 import { useStore } from '../../store/store';
-import toast, { Toaster } from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast';
+
+
+
 
 export default function Pizza({ pizza }) {
     const src = urlFor(pizza.image).url()
@@ -40,7 +43,7 @@ export default function Pizza({ pizza }) {
                 {/*right side */}
                 <div className={css.right}>
                     <span>{pizza.name}</span>
-                    <span>{pizza.details}</span>
+                    <span >{pizza.details}</span>
                     <span> <span style={{ color: "var(--themeRed)" }}> R$ </span> {pizza.price[Size]}</span>
                     <div className={css.size}>
                         <span>Tamanhos</span>

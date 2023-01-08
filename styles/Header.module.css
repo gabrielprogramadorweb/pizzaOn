@@ -40,7 +40,11 @@
 }
 
 .cart {
-  position: ;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  z-index: 99;
+
 }
 
 .badge {
@@ -49,16 +53,36 @@
   background-color: var(--themeRed);
   color: white;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  font-size: 0.9rem;
+  height: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 0.6rem;
-  top: 4%;
+  right: 4%;
+  top: -14%;
   cursor: pointer;
 }
 
 .cart {
   cursor: pointer;
+}
+
+@media (max-width:800px) {
+  .menu {
+    width: 20px;
+    padding: -50%;
+    opacity: 0;
+  }
+
+  .logo {
+    margin-left: 3%;
+  }
+
+  .logo>span {
+    width: 20px;
+    margin-left: -20%;
+    padding-left: 10%;
+
+  }
 }
