@@ -5,7 +5,7 @@ import { UilShoppingBag, UilReceipt } from '@iconscout/react-unicons';
 import { useStore } from '../store/store';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import Menu from './Menu';
+
 
 
 
