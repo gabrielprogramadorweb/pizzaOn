@@ -108,12 +108,12 @@ export default function Cart() {
                             <span> <span style={{ color: "var(--themeRed)" }}>R$ </span> {total()} </span>
                         </div>
 
-
-                        <div className={css.buttons}>
-                            <button className="btn" onClick={handleOnDelivery}>Pagar na entrega</button>
-                            <button className="btn" onClick={handleCheckout}>Pagar agora</button>
-                        </div>
-
+                        {!Order && CartData.pizzas.length > 0 ? (
+                            <div className={css.buttons}>
+                                <button className="btn" onClick={handleOnDelivery}>Pagar na entrega</button>
+                                <button className="btn" onClick={handleCheckout}>Pagar agora</button>
+                            </div>
+                        ) : null}
 
 
 
