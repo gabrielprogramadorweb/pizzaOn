@@ -23,7 +23,7 @@ export default function Header
       {/* logo side */}
       <div className={styles.logo}>
         <Image src={Logo} alt="" width={50} height={50} />
-        <Link href='./'><span>OnPizza</span></Link>
+        <Link href='../../'><span>OnPizza</span></Link>
       </div>
 
       {/*Menu side*/}
