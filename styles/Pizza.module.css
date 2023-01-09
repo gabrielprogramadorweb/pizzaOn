@@ -107,6 +107,7 @@
 
     .right {
         font-size: 1.5rem;
+        margin-bottom: 100%;
     }
 
     .size {
@@ -119,28 +120,27 @@
     }
 
     .SizeVaraints {
-        font-size: 0.6rem;
-        display: block;
-        background-size: 20px;
-        margin-top: -180%;
-        padding-bottom: 20px;
-
-        transform: translateX(80%);
-
+        font-size: 0.7rem;
+        display: flex;
+        left: 50%;
+        margin-top: 5%;
+        transform: translate(-50%);
+        position: absolute;
 
     }
 
     .SizeVaraints>div {
 
+
         padding-bottom: -20px;
-        margin-top: 2%;
+
 
 
     }
 
     .counter {
 
-        margin-top: 20%;
+        margin-top: 30%;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
@@ -150,9 +150,10 @@
 
     .quantity>span {
         transform: translateY(-90%);
-        margin-top: 10%;
+        margin-top: 20%;
         left: 50%;
-        transform: translateX(50%);
+        position: absolute;
+        transform: translateX(-50%);
         text-align: center;
         margin-bottom: 100%;
     }
