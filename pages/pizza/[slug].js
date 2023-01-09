@@ -7,6 +7,7 @@ import RightArrow from '../../assets/arrowRight.png'
 import { useState } from 'react';
 import { useStore } from '../../store/store';
 import toast, { Toaster } from 'react-hot-toast';
+import { UilShoppingCart } from '@iconscout/react-unicons'
 
 
 
@@ -68,7 +69,7 @@ export default function Pizza({ pizza }) {
                     </div>
                     {/* button */}
                     <div className={`btn ${css.btn}`} onClick={addToCart}>
-                        Add ao Carrinho
+                        <UilShoppingCart></UilShoppingCart>Adicionar ao Carrinho
                     </div>
                 </div>
                 <Toaster />

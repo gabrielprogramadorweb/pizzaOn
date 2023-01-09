@@ -90,18 +90,20 @@
 
 @media(max-width:800px) {
     .container {
-        width: 200px;
+        width: 100%;
         display: block;
 
     }
 
     .imageWrapper {
-        width: 230%;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+
     }
 
-    .imageWrapper>Image {
-        width: 300px;
-    }
+
+
 
     .right {
         font-size: 1.5rem;
@@ -117,12 +119,13 @@
     }
 
     .SizeVaraints {
-        font-size: 1.1rem;
+        font-size: 0.6rem;
         display: block;
         background-size: 20px;
-        margin-top: -680%;
+        margin-top: -180%;
         padding-bottom: 20px;
-        margin-left: 220%;
+
+        transform: translateX(80%);
 
 
     }
@@ -136,21 +139,31 @@
     }
 
     .counter {
-        margin-left: -150%;
+
         margin-top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
 
 
     }
 
     .quantity>span {
-        transform: translateY(-80%);
-        margin-top: 20%;
+        transform: translateY(-90%);
+        margin-top: 10%;
+        left: 50%;
+        transform: translateX(50%);
         text-align: center;
+        margin-bottom: 100%;
     }
 
     .btn {
-        margin-top: 20%;
-        font-size: 2.1rem;
+        margin-top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.1rem;
+        margin-bottom: 200%;
+        position: absolute;
         text-align: center;
     }
 
