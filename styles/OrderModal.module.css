@@ -25,3 +25,11 @@
     font-size: 1rem;
     background-color: rgb(59 208 59);
 }
+
+.formContainer>input {
+    background-color: rgb(241, 231, 231);
+}
+
+.formContainer>textarea {
+    background-color: rgb(241, 231, 231);
+}

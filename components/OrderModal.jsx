@@ -47,7 +47,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
                 <textarea onChange={handleInput} name="address" cols={8} rows={3} placeholder='Endereço' ></textarea>
                 <span>
                     Você vai pagar <span> R$ {total} </span>
-                    na entrega
+
                 </span>
                 <button type="submit" className="btn">Faça a encomenda</button>
             </form>
