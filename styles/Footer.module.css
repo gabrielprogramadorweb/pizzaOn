@@ -5,14 +5,12 @@
   margin-top: 6rem;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    1deg,
-    rgba(255, 237, 237, 0.85) 0%,
-    rgba(255, 255, 255, 0) 14rem
-  );
+  background: linear-gradient(1deg,
+      rgba(255, 237, 237, 0.85) 0%,
+      rgba(255, 255, 255, 0) 14rem);
 }
 
-.container > span {
+.container>span {
   color: var(--themeRed);
   font-weight: bold;
 }
@@ -23,14 +21,24 @@
   justify-content: center;
   gap: 0.5rem;
 }
-.logo > span {
+
+.logo>span {
   font-weight: bold;
   font-size: 1rem;
 }
+
 .social {
   display: flex;
   gap: 1rem;
 }
-.social > * {
+
+.social>* {
   fill: var(--themeRed);
+}
+
+@media(max-width:800px) {
+  .logo {
+    display: block;
+
+  }
 }
