@@ -56,7 +56,7 @@ export default function Orders({ order }) {
                 <div className={css.statusContainer}>
                     <div className={css.status}>
                         <UilBill width={50} height={50} />
-                        <span>Pagamento</span>
+                        <span className={css.pag}>Pagamento</span>
                         {order.method === 0 ?
                             <span className={css.completed}>Concluido</span> :
                             <span className={css.pending}>Na entrega</span>
