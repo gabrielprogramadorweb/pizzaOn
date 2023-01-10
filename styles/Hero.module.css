@@ -25,6 +25,10 @@
 
 }
 
+.cherryDiv:hover {
+  transform: scale(1.1);
+}
+
 .heroText {
   display: flex;
   flex-direction: column;
@@ -148,7 +152,6 @@
 
   .cherryDiv {
     display: flex;
-
     justify-content: center;
     width: 200px;
     background-color: var(--pink);
@@ -163,7 +166,14 @@
     color: var(--themeRed);
     font-weight: bold;
 
+
   }
+
+  .cherryDiv:hover {
+    transform: scale(1.1);
+  }
+
+
 
   .Pizza {
     display: flex;
