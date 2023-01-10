@@ -47,3 +47,9 @@
     width: 20rem;
     text-align: center;
 }
+
+@media(max-width:800px) {
+    .heading {
+        margin-top: 10%;
+    }
+}
