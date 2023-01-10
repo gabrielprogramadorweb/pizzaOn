@@ -138,6 +138,11 @@
         align-items: center;
     }
 
+    .status>span {
+        margin-top: 400%;
+        position: absolute;
+    }
+
     .status>:nth-child(2) {
         margin-top: 150%;
     }
@@ -146,7 +151,7 @@
         position: absolute;
         left: -1.5rem;
         top: -1.5rem;
-        width: 4rem;
+        width: 2rem;
     }
 
     .completed,

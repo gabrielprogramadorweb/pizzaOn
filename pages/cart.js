@@ -7,6 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import OrderModal from "../components/OrderModal";
 import { useRouter } from "next/router";
+import { UilTrashAlt } from '@iconscout/react-unicons'
 
 export default function Cart() {
     const CartData = useStore((state) => state.cart)
@@ -85,7 +86,7 @@ export default function Cart() {
                                             {pizza.price * pizza.quantity}
                                         </td>
                                         <td style={{ color: "var(--themeRed", cursor: "pointer" }} onClick={() => handleRemove(i)}>
-                                            X
+                                            <UilTrashAlt />
                                         </td>
                                     </tr>
                                 )
@@ -108,11 +109,13 @@ export default function Cart() {
                             <span> <span style={{ color: "var(--themeRed)" }}>R$ </span> {total()} </span>
                         </div>
 
+                        {!Order && CartData.pizzas.length > 0 ? (
+                            <div className={css.buttons}>
+                                <button className="btn" onClick={handleOnDelivery}>Pagar na entrega</button>
+                                <button className="btn" onClick={handleCheckout}>Pagar agora</button>
+                            </div>
 
-                        <div className={css.buttons}>
-                            <button className="btn" onClick={handleOnDelivery}>Pagar na entrega</button>
-                            <button className="btn" onClick={handleCheckout}>Pagar agora</button>
-                        </div>
+                        ) : null}
 
 
 

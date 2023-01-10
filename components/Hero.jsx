@@ -6,14 +6,18 @@ import { UilPhone } from '@iconscout/react-unicons'
 import Pizza1 from '../assets/p1.jpg'
 
 export default function Hero() {
+  const scroll = () => {
+    window.scrollBy(800, 1300);
+  }
   return (
+
     <div className={css.container}>
       {/*Left side */}
       <div className={css.left}>
 
         <div className={css.cherryDiv}>
-          <span>Entrega full powerr</span>
-          <Image src={Cherry} alt="" width={40} height={25} />
+          <span><button className="btn" onClick={scroll}>Acesse nosso Cardápio</button></span>
+          {/** <Image src={Cherry} alt="" width={40} height={25} />*/}
         </div>
 
 
@@ -24,6 +28,7 @@ export default function Hero() {
             <span style={{ color: "var(--themeRed)" }}>Ganha Outra</span>
           </span>
         </div>
+
 
         <span className={css.miniText}>
           Nossa missão é encantar

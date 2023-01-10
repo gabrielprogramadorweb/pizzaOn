@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 
 export default function Header
   () {
+
   const [Order, setOrder] = useState('');
   useEffect(() => {
     setOrder(localStorage.getItem("order"));
@@ -30,9 +31,10 @@ export default function Header
       <ul className={styles.menu}>
         <li>
           <Link href="../">Home</Link>
+
         </li>
-        <Link href='./Menu'>Menu</Link>
-        <li>Contato</li>
+        {/*<Link href='./Menu'>Menu</Link> */}
+        {/*  <li>Contato</li> */}
       </ul>
 
       {/*rigt side*/}

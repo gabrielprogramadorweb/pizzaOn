@@ -17,7 +17,7 @@
   background-color: var(--pink);
   border: 2px solid black;
   margin-top: 3rem;
-  padding: 1rem;
+  padding: rem;
   border-radius: 2rem;
   font-style: 0.8rem;
   color: var(--themeRed);
@@ -147,15 +147,21 @@
   }
 
   .cherryDiv {
-    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background-color: var(--pink);
     border: none;
-    margin-top: -2rem;
-    padding: 1rem;
+    left: 50%;
+    height: auto;
+    transform: translateX(50%);
+    margin-top: 3rem;
+    padding: none;
     border-radius: 2rem;
     font-style: 0.8rem;
     color: var(--themeRed);
     font-weight: bold;
-    margin-left: -12%;
 
   }
 
