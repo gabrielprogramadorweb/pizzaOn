@@ -92,6 +92,7 @@
     .container {
         width: 100%;
         display: block;
+        box-sizing: border-box;
 
     }
 
@@ -120,21 +121,31 @@
     }
 
     .SizeVaraints {
-        font-size: 0.7rem;
+        font-size: 1rem;
         display: flex;
         left: 50%;
-        margin-top: 5%;
-        transform: translate(-50%);
+        justify-content: center;
+        height: auto;
+        margin-left: -0.9%;
+        align-items: center;
+        margin-top: 10%;
+        transform: translateX(-50%);
         position: absolute;
 
     }
 
     .SizeVaraints>div {
 
-
+        margin: -1%;
+        align-items: center;
         padding-bottom: -20px;
 
 
+
+    }
+
+    .Size {
+        margin: 0;
 
     }
 
