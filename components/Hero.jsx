@@ -16,7 +16,7 @@ export default function Hero() {
       <div className={css.left}>
 
         <div className={css.cherryDiv}>
-          <span><button className="btn" onClick={scroll}>Acesse nosso Cardápio</button></span>
+          <span><button className="btn" onClick={scroll}>Acesse o Cardápio</button></span>
           {/** <Image src={Cherry} alt="" width={40} height={25} />*/}
         </div>
 
